@@ -1,0 +1,24 @@
+# baseURL
+@baseURL = http://127.0.0.1:8080
+
+###
+# Find All Stations
+GET {{ baseURL }}/stations
+
+###
+# Create Station
+POST {{ baseURL }}/stations
+Content-Type: application/json
+
+{"station_id":213688169,"name":"Benjamin Godard - Victor Hugo","lat":48.865983,"lon":2.275725,"capacity":35,"stationCode":"16107","status":{"stationCode":"16107","station_id":213688169,"num_bikes_available":1,"numBikesAvailable":1,"num_bikes_available_types":[{"mechanical":1},{"ebike":0}],"num_docks_available":33,"numDocksAvailable":33,"is_installed":1,"is_returning":1,"is_renting":1,"last_reported":1665097318}}
+
+###
+# Upsert Station
+PUT {{ baseURL }}/stations/213688162
+Content-Type: application/json
+
+{"stationCode":"16107","station_id":213688169,"num_bikes_available":0,"numBikesAvailable":0,"num_bikes_available_types":[{"mechanical":0},{"ebike":0}],"num_docks_available":34,"numDocksAvailable":34,"is_installed":1,"is_returning":1,"is_renting":1,"last_reported":166502873}
+
+###
+# Find User By Id
+GET {{ baseURL }}/stations/1

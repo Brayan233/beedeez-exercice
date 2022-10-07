@@ -1,5 +1,5 @@
 # baseURL
-@baseURL = http://localhost:3000
+@baseURL = http://127.0.0.1:6868
 
 ###
 # Find All Users
@@ -15,7 +15,7 @@ POST {{ baseURL }}/users
 Content-Type: application/json
 
 {
-    "email": "example@email.com",
+    "email": "oduroagency@email.com",
     "password": "password"
 }
 

@@ -50,7 +50,7 @@ const App = () => {
             source={{uri: logo}}
             style={[styles.logo, {transform: [{rotate: spin}]}]}
           />
-          <Text style={styles.title}>Create React Native Web App</Text>
+          <Text style={styles.title}>Create React Native Web App 2</Text>
           <Text style={styles.text}>
             Open up src/App.js to start working on your app!
           </Text>
