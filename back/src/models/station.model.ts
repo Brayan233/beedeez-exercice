@@ -1,5 +1,5 @@
 import { prop, getModelForClass, modelOptions } from '@typegoose/typegoose';
-import StationStatus from '@models/stationStatus.model'
+import { StationStatus } from '@/interfaces/stationStatus.interface';
 @modelOptions({ schemaOptions: { collection: 'stations', timestamps: false } })
 
 class Station {

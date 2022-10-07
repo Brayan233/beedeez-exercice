@@ -16,7 +16,7 @@ class UsersRoute implements Routes {
   private initializeRoutes() {
     this.router.get(`${this.path}`, this.stationController.getStations);
     this.router.get(`${this.path}/:id`, this.stationController.getStationById);
-     this.router.post(`${this.path}`, validationMiddleware(CreateStationDto, 'body'), this.stationController.createStation);
+    this.router.post(`${this.path}`, validationMiddleware(CreateStationDto, 'body'), this.stationController.createStation);
     this.router.put(`${this.path}/:id`, validationMiddleware(CreateStationDto, 'body', true), this.stationController.upsertStation);
     // this.router.delete(`${this.path}/:id`, this.stationController.deleteUser);
   }

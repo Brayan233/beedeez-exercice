@@ -1,0 +1,7 @@
+@baseURL = http://127.0.0.1:8080
+
+###
+# Find All Stations
+GET {{ baseURL }}/stations
+
+POST {{ baseURL }}/heavy-computing?number=5
